@@ -1,0 +1,41 @@
+.wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+}
+.login-form {
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+  .form-group {
+    margin: 15px 0;
+  }
+  h3 {
+    margin: 30px 0;
+  }
+  button { width: 300px; }
+  h1 {
+    background: url(../../assets/images/logo_enjin2.png)no-repeat;
+    width: 136px;
+    height: 30px;
+    margin-left: 80px;
+  }
+  .input-error-label {
+    color: #fff;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+  }
+}
+
+.policy {
+	text-align: justify;
+	background-color: #fff;
+	height: 100px;
+	overflow-y: scroll;
+	padding: 6px 12px;
+  hr {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
