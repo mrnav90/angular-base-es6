@@ -1,6 +1,6 @@
 'use strict';
 
-AppConfig.$inject = [];
-export default function AppConfig() {
-
+AppConfig.$inject = ['$httpProvider'];
+export default function AppConfig($httpProvider) {
+  $httpProvider.interceptors.push('HttpInterceptorService');
 }

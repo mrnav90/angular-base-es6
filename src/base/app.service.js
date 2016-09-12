@@ -10,7 +10,7 @@ export default class AppService {
     this.AuthModel = new AuthModel($localStorage);
   }
 
-  buildRequestParam(method, path, params, isAuthenticated) {
+  buildRequestParam(method, path, params) {
   	let requestParams = {
   		url: APP_API + path
   	};
@@ -20,17 +20,16 @@ export default class AppService {
   			if (params) {
   				requestParams.data = params;
   			}
-  			requestParams.headers = isAuthenticated ? this.AuthModel.getHeaders(true) : this.AuthModel.getHeaders();
+  			requestParams.headers = this.AuthModel.getHeaders();
   		break;
   		case 'GET':
   			requestParams.method = method;
   			if (params) {
   				requestParams.data = params;
   			}
-  			requestParams.headers = isAuthenticated ? this.AuthModel.getHeaders(true) : this.AuthModel.getHeaders();
+  			requestParams.headers = this.AuthModel.getHeaders();
   		break;
   		case 'PUT':
-  		break;
   		break;
   		case 'DELETE':
   		break;

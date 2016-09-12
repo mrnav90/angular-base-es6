@@ -21,20 +21,18 @@ export default class AuthModel {
 		return this.$localStorage.token;
 	}
 
-	getHeaders(isAuthenticated) {
-		if (isAuthenticated) {
-			return {
-      	'Authorization': this.getAccessToken() ? 'Bearer '+this.getAccessToken() : '',
-      	'Content-Type': 'application/json'
-    	}
-		} else {
-			return {
-      	'Content-Type': 'application/json'
-    	}
-		}
+	getHeaders() {
+		return {
+    	'Content-Type': 'application/json'
+  	}
 	}
 
 	isAuthenticated() {
 		return angular.isDefined(this.$localStorage.userInfo) && this.$localStorage.userInfo !== null;
+	}
+
+	revokeUser() {
+		delete this.$localStorage.token;
+		delete this.$localStorage.userInfo;
 	}
 }
