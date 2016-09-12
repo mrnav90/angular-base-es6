@@ -13,6 +13,7 @@ import 'ladda/css/ladda.scss';
 import 'ladda/dist/spin.min.js';
 import 'ladda/dist/ladda.min.js';
 import 'angular-ladda';
+import 'ngstorage';
 import appDecorators from './common/app.decorators';
 import appConfig from './config/app.config';
 import appRun from './config/app.run';
@@ -27,6 +28,7 @@ angular.module('Jinjer', [
   'ui.bootstrap',
   'toastr',
   'angular-ladda',
+  'ngStorage',
   'templates',
   appDecorators,
   appComponents,

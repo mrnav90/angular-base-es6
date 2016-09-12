@@ -1,5 +1,5 @@
 {
-  "name": "jinjer HR",
+  "name": "jinjerHR",
   "version": "1.0.0",
   "description": "Angular frontend for app es6",
   "author": "VietNa",
@@ -13,7 +13,6 @@
     "angular-ui-bootstrap": "^2.0.1",
     "angular-ui-router": "^0.3.1",
     "bootstrap": "^3.3.7",
-    "bootstrap-sass-loader": "^1.0.10",
     "font-awesome": "^4.6.3",
     "jquery": "^2.2.0",
     "ladda": "^1.0.0",
